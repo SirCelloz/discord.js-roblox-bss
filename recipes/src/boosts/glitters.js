@@ -2,13 +2,11 @@ const Glitters = {
   moonCharms: 25,
   magicBeans: 1,
 
-  total: function(val) {
-    const total = {
-      moonCharms: this.moonCharms * val,
-      magicBeans: this.magicBeans * val,
+  total: (val) => {
+    return {
+      moonCharms: Glitters.moonCharms * val,
+      magicBeans: Glitters.magicBeans * val,
     }
-
-    return total;
   }
 };
 

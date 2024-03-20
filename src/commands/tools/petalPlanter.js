@@ -8,9 +8,10 @@ module.exports = {
 
   async execute(interaction) {
     const recipe = Recipe;
+    const hasil = recipe.SuperSmoothies.totalFull(100);
 
     await interaction.reply({
-      content: `the val is ${recipe.Caustic.enzymes}`
+      content: `the val is ${hasil.neonBerries}`
     })
 
 

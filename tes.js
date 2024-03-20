@@ -1,6 +1,5 @@
 const recipe = require('recipes')
 
-const total = recipe.Glitters.total(50);
+const total = recipe.SuperSmoothies.totalFull(100);
 
-console.log(total.magicBeans);
-
+console.log(total.neonBerries);
