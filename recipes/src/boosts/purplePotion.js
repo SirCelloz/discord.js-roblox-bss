@@ -20,9 +20,9 @@ const PurplePotion = {
   totalFull: (val) => {
     return {
       neonBerries: PurplePotion.neonBerries * val,
-      redExt: redExt.total(val),
-      blueExt: blueExt.total(val),
-      glues: glue.total(val),
+      redExt: redExt.total(val * PurplePotion.redExt),
+      blueExt: blueExt.total(val * PurplePotion.blueExt),
+      glues: glue.total(val * PurplePotion.glues),
     }
   }
 }

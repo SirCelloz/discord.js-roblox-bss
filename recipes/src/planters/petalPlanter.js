@@ -14,14 +14,10 @@ const PetalPlanter = {
     return {
       Glitters: glitters.total(PetalPlanter.glitters),
       SoftWax: softWax.total(PetalPlanter.softWax),
-      Swirled: swirled.total(PetalPlanter.swirled),
-      SuperSmoothies: superSmoothies.total(PetalPlanter.superSmoothies),
+      Swirled: swirled.totalFull(PetalPlanter.swirled),
+      SuperSmoothies: superSmoothies.totalFull(PetalPlanter.superSmoothies),
     }
   },
-
-  totalFull: () => {
-    
-  }
 }; 
 
 module.exports = PetalPlanter;

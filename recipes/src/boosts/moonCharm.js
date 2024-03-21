@@ -17,7 +17,7 @@ const MoonCharm = {
     return {
       royalJelly: MoonCharm.royalJelly * val,
       pineapples: MoonCharm.pineapples * val,
-      gumdrops: gumdrops.total(val),
+      gumdrops: gumdrops.total(val * MoonCharm.gumdrops),
     }
   }
 }

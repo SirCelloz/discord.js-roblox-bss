@@ -1,5 +1,5 @@
 const recipe = require('recipes')
 
-const total = recipe.SuperSmoothies.totalFull(100);
+const total = recipe.PetalPlanter.totalAll()
 
-console.log(total.neonBerries);
+console.log(total);

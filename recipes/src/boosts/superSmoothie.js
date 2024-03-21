@@ -19,10 +19,10 @@ const SuperSmoothies = {
 
   totalFull: (val) => {
     return {
-      neonBerries: SuperSmoothies.neonBerries * val,
-      starJellies: starJellies.totalFull(val),
-      purplePotions: purplePotion.totalFull(val),
-      tropicalDrinks: tropicalDrink.totalFull(val),
+      neonBerries: (SuperSmoothies.neonBerries * SuperSmoothies.purplePotions + purplePotion.neonBerries) * val,
+      starJellies: starJellies.totalFull(val * SuperSmoothies.starJellies),
+      purplePotions: purplePotion.totalFull(val * SuperSmoothies.purplePotions),
+      tropicalDrinks: tropicalDrink.totalFull(val * SuperSmoothies.tropicalDrinks),
     }
   }
 };

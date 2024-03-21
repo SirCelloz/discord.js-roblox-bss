@@ -17,8 +17,8 @@ const TropicalDrink = {
   totalFull: (val) => {
     return {
       coconuts: TropicalDrink.coconuts * val,
-      enzymes: enzymes.total(val),
-      oils: oil.total(val),
+      enzymes: enzymes.total(val * TropicalDrink.enzymes),
+      oils: oil.total(val * TropicalDrink.oils),
     }
   }
 }

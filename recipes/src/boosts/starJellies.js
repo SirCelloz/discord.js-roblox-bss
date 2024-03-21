@@ -14,7 +14,7 @@ const StarJelly = {
   totalFull: (val) => {
     return {
       royalJellies: StarJelly.royalJellies * val,
-      glitters: glitters.total(val),
+      glitters: glitters.total(val * StarJelly.glitters),
     }
   }
 }

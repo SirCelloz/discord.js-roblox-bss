@@ -8,6 +8,7 @@ exports.Caustic = require('./wax/caustic');
 exports.Glitters = require('./boosts/glitters');
 exports.MoonCharms = require('./boosts/moonCharm');
 exports.SuperSmoothies = require('./boosts/superSmoothie');
+exports.PurplePotions = require('./boosts/purplePotion');
 
 // Planters
 exports.PetalPlanter = require('./planters/petalPlanter')
